@@ -1,0 +1,27 @@
+.ratio-custom {
+    @media (min-width: 992px) and (max-width: 1270px) {
+        --bs-aspect-ratio: 120%;
+    }
+}
+
+.depoimentos-swiper {
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 15px);
+        //bottom: 14px;
+    }
+
+    .swiper-pagination-bullet-active {
+        --swiper-theme-color:
+            #FCBE18 !important;
+        background: #FCBE18 !important;
+        border: none !important;
+    }
+
+    .swiper-pagination-bullet {
+        border: 1px solid #3C4C71;
+        background: none;
+        opacity: 1;
+    }
+}

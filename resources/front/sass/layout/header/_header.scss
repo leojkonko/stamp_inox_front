@@ -1,0 +1,42 @@
+.header {
+    z-index: $zindex-header;
+
+    &-logo {
+        @include linear-rfs(10rem, 15rem, 375px, 1920px, "width");
+    }
+
+    .menu {
+        a {
+            padding: 0.25rem 0.75rem;
+            border-radius: $border-radius-sm;
+
+            &.active {
+                background-color: rgba($primary, 0.1);
+            }
+        }
+    }
+}
+
+.areas-header {
+    & .bg-custom {
+        opacity: 0.65 !important;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    & .ratio-header {
+        transform: scale(1.0);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover {
+        & .bg-custom {
+            opacity: 0.85 !important;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        & .ratio-header {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
+    }
+}
