@@ -33,7 +33,7 @@
                                 {{ $site->getBreadTitle() }}
                             </h2>
                         @endif
-                        <ol class="breadcrumb d-flex justify-content-lg-start justify-content-center">
+                        <ol class="breadcrumb d-flex justify-content-lg-start justify-content-center align-items-center">
                             @foreach ($site->getBreadCrumbs() as $bread)
                                 @if ($loop->last)
                                     <li class="breadcrumb-item active fs-16 fw-400 pe-lg-4 text-white" aria-current="{{ $bread->getText() }}">{{ $bread->getText() }}</li>

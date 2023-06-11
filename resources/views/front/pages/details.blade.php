@@ -21,14 +21,14 @@
                             </div>
                             {{--<div class="swiper-pagination h-auto mb-2"></div>--}}
                             <div class="swiper-button-prev" style="left: 5%;">
-                                <button class="btn btn-outline-warning rounded-circle">
+                                <button class="btn btn-outline-warning rounded-circle button-svg">
                                     <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M13 7L1 7M1 7L7 13M1 7L7 0.999999" stroke="#484848" stroke-linejoin="round"/>
                                     </svg>   
                                 </button>                                                          
                             </div>
                             <div class="swiper-button-next" style="right: 5%;">
-                                <button class="btn btn-outline-warning rounded-circle">
+                                <button class="btn btn-outline-warning rounded-circle button-svg">
                                     <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0 7H12M12 7L6 1M12 7L6 13" stroke="#484848" stroke-linejoin="round"/>
                                     </svg>   
@@ -46,7 +46,9 @@
                             </p>
                             <div class="d-flex justify-content-center justify-content-lg-start d-flex mt-2 mt-xl-6 mb-lg-4 gap-1">
                                 <button class="rounded-30 fs-16 fw-400 btn btn-outline-warning text-dark">VER TABELA</button>
-                                <button class="rounded-30 fs-16 fw-400 btn btn-primary">TENHO INTERESSE</button>
+                                <a href="#formm">
+                                    <button class="rounded-30 fs-16 fw-400 btn btn-primary">TENHO INTERESSE</button>
+                                </a>
                             </div>                                
                         </div>
                     </div>
@@ -65,7 +67,7 @@
                     <div class="col-lg-8 m-auto">
                         <div class="swiper depoimentos-swiper overflow-hidden m-auto p-2" style="margin: -2rem;" data-aos="fade-down"
                         data-aos-easing="linear"
-                        data-aos-duration="2500">
+                        data-aos-duration="1000">
                             <div class="swiper-wrapper mb-4">
                         
                                 @foreach (range(0,2) as $image)
@@ -83,7 +85,7 @@
                                         </div>
                                         <div class="col-lg-4 col-xl-5 col-xxl-4 h-100">
                                             <div class="bg-primary rounded-30-right rounded-30-bottom">
-                                                <div class="ratio ratio-1x1 ratio-custom">
+                                                <div class="ratio ratio-lg-6x9 ratio-xl-125 ratio-xxl-1x1">
                                                     <img class="w-100 h-100 object-fit-contain p-3" src="{{ asset("front/images/logos/logo.svg") }}" alt="">
                                                 </div>
                                             </div>
@@ -118,5 +120,24 @@
                 <ellipse cx="677.476" cy="453.475" rx="555.725" ry="779.965" transform="rotate(45 677.476 453.475)" fill="#FCBE18"/>
              </svg>                                             
         </section>
+        <section class="pt-lg-4 pt-2" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
+            <div class="container position-relative">
+                <div class="row ">
+                    <div class="col-lg-6 col-xl-6 col-xxl-7 g-0" style="display: grid;">
+                        <div class="formulario rounded-30-left rounded-30-top p-2 py-xl-4 px-xl-4 px-xxl-6 bg-secondary pe-xxl-6" id="formm">
+                            <h2 class="fs-55 mb-1 fw-800 text-primary fw-bold text-lg-start text-center">Entre em contato</h2>
+                            <livewire:form-contact />
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-6 col-xxl-5 bg-secondary g-0 rounded-30-right rounded-30-bottom overflow-hidden">
+                        <div class="ratio ratio-1x1 h-100 ms-auto" style="">
+                            <img class="w-100 h-100 object-fit-cover rounded-30-bottom rounded-30-right" src="{{ asset("front/images/backgrounds/contato.png") }}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
     </main>
 @endsection

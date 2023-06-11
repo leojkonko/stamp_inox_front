@@ -47,13 +47,13 @@
                                                             <img class="object-fit-cover w-100 h-100 " src="{{ asset("front/images/backgrounds/produto-destaque.png") }}" alt="">
                                                         </a>
                                                     </div>
-                                                    <div class="w-100 d-flex mt-2 px-lg-2 px-2 mb-2">
-                                                        <p class="fs-20 fw-400 me-auto">Produto 1</p>
-                                                        <button class="btn btn-outline-warning rounded-circle ms-auto">
+                                                    <div class="w-100 d-flex align-items-center mt-1 px-lg-1 px-1 mb-1">
+                                                        <p class="fs-20 fw-400 me-auto mt-0 mb-0">Produto 1</p>
+                                                        <a href="" class="btn btn-outline-warning rounded-circle ms-auto">
                                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                 <path d="M0 7H12M12 7L6 1M12 7L6 13" stroke="#484848" stroke-linejoin="round"/>
-                                                            </svg>                                                                
-                                                        </button>
+                                                            </svg>                                                            
+                                                        </a>
                                                     </div>
                                                 </div>
                                             @endforeach
@@ -125,7 +125,7 @@
                 <div class="container container-start position-relative">
                     <svg style="bottom: -21%;
                     z-index: 1;
-                    left: -10%;" class="position-absolute" width="653" height="1013" viewBox="0 0 653 1013" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    left: -10%;" class="position-absolute d-none d-lg-block" width="653" height="1013" viewBox="0 0 653 1013" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <ellipse cx="506.339" cy="506.339" rx="410.9" ry="576.701" transform="rotate(45 506.339 506.339)" stroke="#FCBE18" stroke-width="10"/>
                     </svg>   
                     <div class="row">
@@ -157,12 +157,12 @@
             <div class=""></div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-11 h-100 position-absolute end-0 top-0 z-index-1 g-0" data-aos="zoom-out-left">
+                    <div class="col-lg-11 h-100 position-absolute end-0 top-0 z-index-1 g-0 d-none d-lg-block" data-aos="zoom-out-left">
                         <div class="h-100">
                             <img class="w-100 h-100 object-fit-cover" src="{{ asset("front/images/backgrounds/elipse-blog.png") }}" alt="">
                         </div>
                     </div>
-                    <div class="col-lg-4 d-flex align-items-center" data-aos="zoom-out-right">
+                    <div class="col-lg-4 d-flex align-items-center z-index-1" data-aos="zoom-out-right">
                         <div class="position-relative py-lg-6 z-index-3 pe-xl-6 py-2">
                             <h2 class="fs-55 fw-800 text-primary w-100 text-lg-start text-center">Blog</h2>
                             <p class="fs-16 fw-400 pe-lg-4 text-lg-start text-center">
@@ -188,21 +188,23 @@
                                         opacity: 0.6;
                                         border-radius: 0px 0px 10px 30px;"></div>
                                             <div class="bottom-0 start-0">
-                                                <div class="position-relative h-100 d-flex align-items-end">
-                                                    <div class="mb-xxl-4 mb-lg-2 mx-lg-2 d-flex">
-                                                        <h2 class="fs-16 fw-800 text-white" style="width: 60%;">
-                                                            Título do Blog Título do BlogTítulo do Blog Título do Blog
-                                                            Título do Blog
-                                                        </h2>
-                                                        <div class="text-end" style="width: 40%">
-                                                            <button class="btn btn-outline-warning fs-16 fw-800 rounded-circle ms-auto">
-                                                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M0 7H12M12 7L6 1M12 7L6 13" stroke="white" stroke-linejoin="round"/>
-                                                                </svg>                                                
-                                                            </button>
+                                                <a href="{{ route_lang('products') }}">
+                                                    <div class="position-relative h-100 d-flex align-items-end">
+                                                        <div class="mb-xxl-4 mb-lg-2 mx-lg-2 d-flex align-items-end">
+                                                            <h2 class="fs-16 fw-800 text-white" style="width: 60%;">
+                                                                Título do Blog Título do BlogTítulo do Blog Título do Blog
+                                                                Título do Blog
+                                                            </h2>
+                                                            <div class="text-end" style="width: 40%">
+                                                                <button class="btn btn-outline-warning fs-16 fw-800 rounded-circle ms-auto">
+                                                                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M0 7H12M12 7L6 1M12 7L6 13" stroke="white" stroke-linejoin="round"/>
+                                                                    </svg>                                                
+                                                                </button>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </a>
                                             </div>
                                     </div>
                                 </div>
@@ -216,21 +218,23 @@
                                         opacity: 0.6;
                                         border-radius: 10px 30px 10px 10px;"></div>
                                         <div class="bottom-0 start-0">
-                                            <div class="position-relative h-100 d-flex align-items-end">
-                                                <div class="mb-lg-1 mx-lg-1 d-flex">
-                                                    <h2 class="fs-16 fw-800 text-white" style="width: 60%;">
-                                                        Título do Blog Título do BlogTítulo do Blog Título do Blog
-                                                        Título do Blog
-                                                    </h2>
-                                                    <div class="text-end" style="width: 40%">
-                                                        <button class="btn btn-outline-warning fs-16 fw-800 rounded-circle ms-auto">
-                                                            <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M0 7H12M12 7L6 1M12 7L6 13" stroke="white" stroke-linejoin="round"/>
-                                                            </svg>                                                
-                                                        </button>
+                                            <a href="{{ route_lang('products') }}">
+                                                <div class="position-relative h-100 d-flex align-items-end">
+                                                    <div class="mb-lg-1 mx-lg-1 d-flex align-items-end">
+                                                        <h2 class="fs-16 fw-800 text-white" style="width: 60%;">
+                                                            Título do Blog Título do BlogTítulo do Blog Título do Blog
+                                                            Título do Blog
+                                                        </h2>
+                                                        <div class="text-end" style="width: 40%">
+                                                            <button class="btn btn-outline-warning fs-16 fw-800 rounded-circle ms-auto">
+                                                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M0 7H12M12 7L6 1M12 7L6 13" stroke="white" stroke-linejoin="round"/>
+                                                                </svg>                                                
+                                                            </button>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="ratio ratio-40 mt-2" data-aos="fade-right"
@@ -242,21 +246,23 @@
                                         opacity: 0.6;
                                         border-radius: 10px 10px 30px 10px;"></div>
                                         <div class="bottom-0 start-0">
-                                            <div class="position-relative h-100 d-flex align-items-end">
-                                                <div class="mb-lg-1 mx-lg-1 d-flex">
-                                                    <h2 class="fs-16 fw-800 text-white" style="width: 60%;">
-                                                        Título do Blog Título do BlogTítulo do Blog Título do Blog
-                                                        Título do Blog
-                                                    </h2>
-                                                    <div class="text-end" style="width: 40%">
-                                                        <button class="btn btn-outline-warning fs-16 fw-800 rounded-circle ms-auto">
-                                                            <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M0 7H12M12 7L6 1M12 7L6 13" stroke="white" stroke-linejoin="round"/>
-                                                            </svg>                                                
-                                                        </button>
+                                            <a href="{{ route_lang('products') }}">
+                                                <div class="position-relative h-100 d-flex align-items-end">
+                                                    <div class="mb-lg-1 mx-lg-1 d-flex align-items-end">
+                                                        <h2 class="fs-16 fw-800 text-white" style="width: 60%;">
+                                                            Título do Blog Título do BlogTítulo do Blog Título do Blog
+                                                            Título do Blog
+                                                        </h2>
+                                                        <div class="text-end" style="width: 40%">
+                                                            <button class="btn btn-outline-warning fs-16 fw-800 rounded-circle ms-auto">
+                                                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M0 7H12M12 7L6 1M12 7L6 13" stroke="white" stroke-linejoin="round"/>
+                                                                </svg>                                                
+                                                            </button>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -268,30 +274,30 @@
                         <div class="swiper-wrapper mb-4">
                     
                             @foreach (range(0,3) as $image)
-                                <a href="" data-fancybox="gallery" class="d-block swiper-slide">
+                                <a href="{{ route_lang('blog') }}" class="d-block swiper-slide">
                                     <div class="ratio ratio-85 my-2 rounded-30">
                                         <img class="w-100 h-100 object-fit-contain rounded-30" src="{{ asset("front/images/backgrounds/blog1.png") }}" alt="">
                                         <div class="w-100 h-100 rounded-30" style="
                                         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
                                         opacity: 0.6;"></div>
                                             <div class="bottom-0 start-0">
-                                                <div class="position-relative h-100">
-                                                    <div class="h-100 d-flex align-items-end">
-                                                        <div class="p-2">
-                                                            <h2 class="fs-16 fw-800 text-white w-100 text-center">
-                                                                Título do Blog Título do Blog Título do Blog Título do Blog
-                                                                Título do Blog
-                                                            </h2>
-                                                            <div class="text-end w-100 text-center">
-                                                                <button class="btn btn-outline-warning fs-16 fw-800 rounded-circle ms-auto">
-                                                                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M0 7H12M12 7L6 1M12 7L6 13" stroke="white" stroke-linejoin="round"/>
-                                                                    </svg>                                                
-                                                                </button>
+                                                    <div class="position-relative h-100">
+                                                        <div class="h-100 d-flex align-items-end">
+                                                            <div class="p-2">
+                                                                <h2 class="fs-16 fw-800 text-white w-100 text-center">
+                                                                    Título do Blog Título do Blog Título do Blog Título do Blog
+                                                                    Título do Blog
+                                                                </h2>
+                                                                <div class="text-end w-100 text-center">
+                                                                    <button class="btn btn-outline-warning fs-16 fw-800 rounded-circle m-auto button-svg">
+                                                                        <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M0 7H12M12 7L6 1M12 7L6 13" stroke="white" stroke-linejoin="round"/>
+                                                                        </svg>                                                
+                                                                    </button>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
                                             </div>
                                     </div>
                                 </a>

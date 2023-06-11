@@ -7,7 +7,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-4 col-lg-3">
-                        <div class=" p-lg-2 p-1">                              
+                        <div class=" pt-lg-2 pt-1">                              
                             <form action="">
                                 <div class="accordion bg-secondary rounded-30 p-0-50" id="accordionExample" data-aos="fade-up-right">
                                     @php
@@ -57,7 +57,7 @@
                         </div>
                     </div>
                     <div class="col-xl-8 col-lg-9 col-12" data-aos="zoom-in-down">
-                       <div class="ps-lg-4">
+                       <div class="">
                             <div class="d-flex">
                                 <div class="d-flex w-100 align-items-center justify-content-end gap-1 mb-2 my-2 my-lg-2">
                                     filtrado por:
@@ -85,7 +85,7 @@
                                             </p>
                                             <div class="d-flex bottom-0 end-0 ratio-unstyled-all justify-content-end align-items-center ms-auto">
                                                 <a href="{{ route_lang('details') }}">
-                                                    <button class="btn btn-outline-warning rounded-circle">
+                                                    <button class="btn btn-outline-warning rounded-circle button-svg">
                                                         <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M0 7H12M12 7L6 1M12 7L6 13" stroke="#484848" stroke-linejoin="round"/>
                                                         </svg>                                                        

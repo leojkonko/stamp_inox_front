@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Services\SiteService;
 use Ellite\Products\Services\ProductService;
 use Illuminate\Http\Request;
-
+use Ellite\PageCompany\Services\PageCompanyService;
 class ProductsController extends Controller
 {
     public function index(SiteService $alternates, ProductService $products, Request $request)
@@ -46,10 +46,18 @@ class ProductsController extends Controller
             'categories' => $categories,
         ]);
     }
-    public function detalhe(SiteService $alternates, Request $request)
+    public function detalhe(SiteService $site, PageCompanyService $page)
     {
-        
-        return view('front.pages.details');
+        $site->setAlternates('details')
+            ->setTitle('Tachos BP (XX/XX/XX)')
+            ->setBreadTitle('Tachos BP (XX/XX/XX)')
+            ->pushBreadCrumb('Tachos BP (XX/XX/XX)')
+            ->setDescriptionIfNotEmpty($page->getPage()->description)
+            ->setKeywordsIfNotEmpty($page->getPage()->keywords);
+
+        return view('front.pages.details', [
+            'page' => $page->getPage(),
+        ]);
     }
 
     public function details(SiteService $alternates, ProductService $products)

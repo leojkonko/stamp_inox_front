@@ -50,8 +50,8 @@
                                 <img class="object-fit-cover w-100 h-100" src="{{ asset("front/images/backgrounds/35.png") }}" alt="">
                             </div>
                         </div>
-                        <img class="position-absolute z-index-3" style="right: 12%; bottom: 12%;" src="{{ asset("front/images/backgrounds/35.png") }}" alt="" data-aos="fade-left">
-                        <svg class="position-absolute {{ $svg % 2 == 0 ? 'svg-position-initial' : 'svg-position-custom' }} end-0 bottom-0 z-index-1" style="{{ $svg % 2 == 0 ? '' : $svg_position }}"  width="881" height="705" viewBox="0 0 881 705" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <img class="position-absolute z-index-3 banner-logo d-none d-xl-block" style="right: 12%; bottom: 12%;" src="{{ asset("front/images/backgrounds/35.png") }}" alt="" data-aos="fade-left">
+                        <svg class="position-absolute {{ $svg % 2 == 0 ? 'svg-position-initial' : 'svg-position-custom' }} end-0 bottom-0 z-index-1 svg-logo d-none d-xl-block" style="{{ $svg % 2 == 0 ? '' : $svg_position }}"  width="881" height="705" viewBox="0 0 881 705" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <ellipse cx="613.276" cy="613.276" rx="499.122" ry="700.522" transform="rotate(45 613.276 613.276)" stroke="#FCBE18" stroke-width="10"/>
                         </svg> 
                     </div>

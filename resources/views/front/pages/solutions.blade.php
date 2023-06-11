@@ -20,20 +20,20 @@
         </section>
         @foreach (range(0,3) as $o)
         <section class="overflow-hidden mb-2">
-            <div class="container position-relative">
+            <div class="container position-relative" data-aos="fade-left">
                 <div class="row g-0 bg-primary rounded-30">
-                    <div class="col-lg-5 d-flex justify-content-center">
-                        <div class="bg-primary rounded-30-leftt position-relative z-index-3 p-2 p-sm-3 p-lg-4 p-xxl-6" data-aos="fade-left"
-                        data-aos-offset="600"
-                        data-aos-easing="ease-in-sine">
+                    <div class="col-lg-5 d-flex justify-content-center" >
+                        <div class="bg-primary rounded-30-leftt position-relative z-index-3 p-2 p-sm-3 p-lg-4 p-xxl-6">
                             <h2 class="fs-55 fw-800 text-white w-100 text-lg-start text-center">A Stamp Inox</h2>
                             <p class="fs-16 fw-400 text-white text-lg-start text-center">
                                 A Stamp Inox Indústria Metalúrgica Ltda. foi fundada em 1988 pelos administradores Leopoldo Bernardi e Paulo Radaelli, em Caxias do Sul – RS. Iniciaram suas atividades com a produção de serviços terceirizados para empresas da região em solda tig e torno de repuxe manual.    
                             </p>
                             <div class="w-100 text-lg-start text-center">
-                                <button class="mt-1 btn btn-outline-warning rounded-30 text-white fs-20 fw-400">
-                                    TENHO INTERESSE                                              
-                                </button>
+                                <a href="#formm">
+                                    <button class="mt-1 btn btn-outline-warning rounded-30 text-white fs-20 fw-400">
+                                        TENHO INTERESSE                                              
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -42,9 +42,7 @@
                             <div class="swiper-wrapper mb-4">
                                 
                                 @foreach (range(0,2) as $image)
-                                    <div class="swiper-slide" data-aos="fade-right"
-                                    data-aos-offset="600"
-                                    data-aos-easing="ease-in-sine">
+                                    <div class="swiper-slide" data-aos="fade-right">
                                         
                                             <div class="ratio ratio-54 h-100" style="background: linear-gradient(90deg, #3C4C71 0%, rgba(60, 76, 113, 0) 100%);--bs-aspect-ratio: 54%;">
                                                 <img class="w-100 h-100 object-fit-cover z-index-background rounded-30-right" src="{{ asset("front/images/backgrounds/bg-stamp.png") }}" alt="">
@@ -80,7 +78,7 @@
         data-aos-duration="2000">
             <div class="container position-relative">
                 <div class="row ">
-                    <div class="col-lg-6 col-xl-6 col-xxl-7 g-0" style="display: grid;">
+                    <div class="col-lg-6 col-xl-6 col-xxl-7 g-0" style="display: grid;" id="formm">
                         <div class="formulario rounded-30-left rounded-30-top p-2 py-xl-4 px-xl-4 px-xxl-6 bg-secondary pe-xxl-6">
                             <h2 class="fs-55 mb-1 fw-800 text-primary fw-bold text-lg-start text-center">Entre em contato</h2>
                             <livewire:form-contact />

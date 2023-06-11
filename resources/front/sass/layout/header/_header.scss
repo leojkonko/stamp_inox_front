@@ -40,3 +40,29 @@
         }
     }
 }
+
+.banner-logo {
+    @include linear-rfs(10rem, 20rem, 375px, 1920px, "width");
+}
+
+.svg-logo {
+    @media(max-width: 1800px) {
+        bottom: -12%;
+    }
+
+    @media(max-width: 1600px) {
+        bottom: -25%;
+    }
+
+    @media(max-width: 1400px) {
+        bottom: -30%;
+        width: 49%;
+        right: 0%;
+    }
+
+    @media(max-width: 1300px) {
+        bottom: -37%;
+        width: 55%;
+        right: -2%;
+    }
+}

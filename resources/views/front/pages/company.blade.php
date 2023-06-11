@@ -23,7 +23,7 @@
                     data-aos-offset="300"
                     data-aos-easing="ease-in-sine">
                         <a href="" data-fancybox="gallery" class="d-block video-slide swiper-slide">
-                            <div class="ratio ratio-1x1">
+                            <div class="ratio ratio-1x1 h-100">
                                 <img class="rounded-30 rounded-lg-0" src="{{ url("/front/images/backgrounds/empresa.png") }}" alt="Icone">
                             </div>
                             <div class="position-absolute top-0 start-0 d-flex align-items-center justify-content-center h-100 w-100">
@@ -108,7 +108,7 @@
                 </svg>
                 <div class="empresa2-swiper swiper" style="" data-aos="fade-down"
                 data-aos-easing="linear"
-                data-aos-duration="2500">
+                data-aos-duration="800">
                     <div class="swiper-wrapper mb-4">
                         @foreach (range(0,8) as $banner)
                             <div class="swiper-slide">

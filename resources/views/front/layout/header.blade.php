@@ -49,10 +49,10 @@
         <div class="offcanvas-body row g-0 p-0 position-relative">
           @foreach (range(0,2) as $item)
           <div class="col-lg-4 position-relative overflow-hidden">
-            <a href="" class="areas-header">
+            <a href="{{ route_lang('products') }}" class="areas-header">
                 <div class="position-absolute w-100 h-100 z-index-1 bg-custom" style="background: #3C4C71;
                 opacity: 0.65;"></div>
-                <div class="ratio ratio-38 ratio-header">
+                <div class="ratio ratio-38 h-100 ratio-header">
                     <img class="w-100 h-100 object-fit-cover img-ratio-header" src="{{ asset('front/images/backgrounds/offcanvas.png') }}" alt="Logo {{ env('APP_NAME') }}">
                 </div>
                 <h2 class="position-absolute start-50 translate-middle top-50 z-index-1 f2-40 fw-800 text-white">Hospitalar</h2>
@@ -63,7 +63,7 @@
           </div>
           @endforeach
         </div>
-        <div type="button" class="btn-close text-reset position-absolute start-50 translate-middle-x" style="bottom: -4rem;opacity: 1;" data-bs-dismiss="offcanvas" aria-label="Close">
+        <div type="button" class="text-reset position-absolute start-50 translate-middle-x" style="bottom: -4rem;opacity: 1;" data-bs-dismiss="offcanvas" aria-label="Close">
             <button class="btn btn-primary position-relative z-index-3 rounded-30">
                 <svg class="me-0-50" width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M13 7L1 7M1 7L7 13M1 7L7 0.999999" stroke="white" stroke-linejoin="round"/>
@@ -83,7 +83,7 @@
                     </a>
                 </div>
 
-                <div class="col-auto m-auto">
+                <div class="col-auto ms-auto m-lg-auto">
 
                     {{-- Botão mobile --}}
                     <button class="d-lg-none btn btn-outline-light p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHeader" aria-controls="offcanvasHeader">
