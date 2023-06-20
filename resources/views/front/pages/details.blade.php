@@ -85,7 +85,7 @@
                                         </div>
                                         <div class="col-lg-4 col-xl-5 col-xxl-4 h-100">
                                             <div class="bg-primary rounded-30-right rounded-30-bottom">
-                                                <div class="ratio ratio-lg-6x9 ratio-xl-125 ratio-xxl-1x1">
+                                                <div class="ratio ratio-1x1 ratio-md-21x9 ratio-lg-6x9 ratio-xl-125 ratio-xxl-1x1">
                                                     <img class="w-100 h-100 object-fit-contain p-3" src="{{ asset("front/images/logos/logo.svg") }}" alt="">
                                                 </div>
                                             </div>

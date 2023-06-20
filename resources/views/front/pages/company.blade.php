@@ -11,7 +11,7 @@
                     data-aos-offset="300"
                     data-aos-easing="ease-in-sine">
                         <div class="py-lg-4 pe-lg-6 text-center text-lg-start">
-                            <p class="fs-16 fw-400">
+                            <p class="fs-16 fw-400 mt-2">
                                 A Stamp Inox Indústria Metalúrgica Ltda. foi fundada em 1988 pelos administradores Leopoldo Bernardi e Paulo Radaelli, em Caxias do Sul – RS. Iniciaram suas atividades com a produção de serviços terceirizados para empresas da região em solda tig e torno de repuxe manual. Em seguida, com o objetivo de ampliar os negócios para atender a demanda do mercado, a Stamp Inox optou pela fabricação de produtos artesanais como: chaleiras, saleiras, açucareiros, saladeiras, bacias, canecas e frigideiras, comercializados para o RS, SC, PR e SP.
                             </p>
                             <p class="fs-16 fw-400">
@@ -95,7 +95,7 @@
             </div>
         </section>
         <section class="position-relative pt-1 mt-0" style="
-        background-image: url(http://localhost:8080/front/images/backgrounds/empresa3.png);
+        background-image: url({{ asset('front/images/backgrounds/empresa3.png') }}); 
         background-position-x: 50%;
         background-size: cover;
         background-repeat: no-repeat;

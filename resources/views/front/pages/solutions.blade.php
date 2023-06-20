@@ -28,7 +28,7 @@
                             <p class="fs-16 fw-400 text-white text-lg-start text-center">
                                 A Stamp Inox Indústria Metalúrgica Ltda. foi fundada em 1988 pelos administradores Leopoldo Bernardi e Paulo Radaelli, em Caxias do Sul – RS. Iniciaram suas atividades com a produção de serviços terceirizados para empresas da região em solda tig e torno de repuxe manual.    
                             </p>
-                            <div class="w-100 text-lg-start text-center">
+                            <div class="w-100 text-lg-start text-center d-flex justify-content-center justify-content-lg-start">
                                 <a href="#formm">
                                     <button class="mt-1 btn btn-outline-warning rounded-30 text-white fs-20 fw-400">
                                         TENHO INTERESSE                                              

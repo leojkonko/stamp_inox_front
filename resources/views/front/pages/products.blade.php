@@ -6,8 +6,8 @@
         <section class="">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-4 col-lg-3">
-                        <div class=" pt-lg-2 pt-1">                              
+                    <div class="col-lg-3">
+                        <div class=" pt-lg-2 pt-1 pe-0-25">                              
                             <form action="">
                                 <div class="accordion bg-secondary rounded-30 p-0-50" id="accordionExample" data-aos="fade-up-right">
                                     @php

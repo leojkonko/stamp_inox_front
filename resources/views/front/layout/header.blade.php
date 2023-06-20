@@ -53,7 +53,7 @@
                 <div class="position-absolute w-100 h-100 z-index-1 bg-custom" style="background: #3C4C71;
                 opacity: 0.65;"></div>
                 <div class="ratio ratio-38 h-100 ratio-header">
-                    <img class="w-100 h-100 object-fit-cover img-ratio-header" src="{{ asset('front/images/backgrounds/offcanvas.png') }}" alt="Logo {{ env('APP_NAME') }}">
+                    <img class="w-100 h-100 object-fit-cover img-ratio-header" width="350px" src="{{ asset('front/images/backgrounds/offcanvas.png') }}" alt="Logo {{ env('APP_NAME') }}">
                 </div>
                 <h2 class="position-absolute start-50 translate-middle top-50 z-index-1 f2-40 fw-800 text-white">Hospitalar</h2>
                 <svg class="position-absolute start-50 translate-middle-x bottom-0 z-index-1"  width="270" height="10" viewBox="0 0 270 10" fill="none" xmlns="http://www.w3.org/2000/svg">
